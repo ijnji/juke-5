@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="song in playlist.songs" ng-class="{active: song === getCurrentSong() }">
+      <tr double-click ng-repeat="song in playlist.songs" ng-class="{active: song === getCurrentSong() }">
         <td>
           <button class="btn btn-default btn-xs" ng-click="toggle(song)">
             <span class="glyphicon" ng-class="{ 'glyphicon-pause': isPlaying(song), 'glyphicon-play': !isPlaying(song) }"></span>
